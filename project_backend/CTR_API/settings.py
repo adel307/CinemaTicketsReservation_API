@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'MainApp',
+    'Cinema',
     'Tickets',
+    'Movie',
 ]
 
 REST_FRAMEWORK = {}
