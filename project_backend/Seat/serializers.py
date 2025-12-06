@@ -4,4 +4,10 @@ from .models import *
 class SeatSerializer(Serializers.ModelSrializers):
     class Meta:
         model = Seat
-        fields = '__all__'
+        fields = [
+            'pk',
+            'tickets',
+            'screen',
+            'row',
+            'number',
+        ]

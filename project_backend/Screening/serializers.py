@@ -4,4 +4,11 @@ from .models import *
 class ScreeningSerializer(Serializers.ModelSrializers):
     class Meta:
         model = Screening
-        fields = '__all__'
+        fields = [
+            'pk',
+            'tickets',
+            'movie',
+            'screen',
+            'start_time',
+            'ticket_price',
+        ]

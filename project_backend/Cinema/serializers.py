@@ -4,9 +4,23 @@ from .models import *
 class CinemaSerializer(Serializers.ModelSrializers):
     class Meta:
         model = cinema
-        fields = '__all__'
+        fields = [
+            'pk',
+            'screens',
+            'name',
+            'address',
+            'phone_number',
+
+        ]
 
 class ScreenSerializer(Serializers.ModelSrializers):
     class Meta:
         model = Screen
-        fields = '__all__'
+        fields = [
+            'pk',
+            'screenings',
+            'seats',
+            'cinema',
+            'name',
+            'capacity',
+        ]
