@@ -2,9 +2,6 @@ from django.contrib import admin
 from .models import Cinema, Screen
 from Seat.models import Seat
 
-
-# --- Inline Admin for related models ---
-# This allows managing Screens directly from the Cinema page.
 class ScreenInline(admin.TabularInline):
     model = Screen
     extra = 1 # Number of empty forms to display
